@@ -18,10 +18,7 @@ android {
 
     buildTypes {
         debug {
-            // Emulator'den host makinenin localhost'una erisim takma adi.
-            // Fiziksel cihazda test icin bilgisayarinizin LAN IP'sini yazip
-            // burayi degistirin (ör. "http://192.168.1.20:8000").
-            buildConfigField("String", "BASE_URL", "\"http://10.0.2.2:8000\"")
+            buildConfigField("String", "BASE_URL", "\"https://turkuaz-core2-production.up.railway.app\"")
         }
         release {
             isMinifyEnabled = false
